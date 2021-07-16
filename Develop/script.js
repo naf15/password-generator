@@ -77,3 +77,10 @@ var getSpecialChar = function () {
     bank += specialCharBank;
   }
 }
+
+var checkCharsBank = function () {
+  if (bank === "") {
+    alert("Please choose at least one character type!")
+    generatePassword();
+  }
+}
