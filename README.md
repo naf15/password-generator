@@ -1,6 +1,24 @@
 # 03 JavaScript: Password Generator
 
-## Your Task
+## Description
+
+This application allows the user to generate a password based on a set of criteria chosen by the user.
+The password strength can be varied depending on the length of the password along with whether the user wants:
+
+* lowercase letters (qwertyuiopasdfghjklzxcvbnm)
+* uppercase letters (QWERTYUIOPASDFGHJKLZXCVBNM)
+* numbers (0123456789)
+* special characters (~!@#$%^&*()_+)
+* 8 < length < 128
+
+## Usage
+
+In order to generate random password, the user must follow these instructions:
+
+1. 
+
+
+The deployed application can be found here: https://naf15.github.io/password-generator/. 
 
 This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
