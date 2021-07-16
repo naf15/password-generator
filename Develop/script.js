@@ -43,3 +43,13 @@ var generatePassword = function () {
   bank = '';
   return password;
 }
+
+var getPasswordLength = function () {
+  passwordLength = prompt("Enter a password length");
+  if (passwordLength < 8 || passwordLength > 128) {
+    getPasswordLength();
+  }
+  else {
+    return passwordLength;
+  }
+}
