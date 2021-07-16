@@ -53,3 +53,27 @@ var getPasswordLength = function () {
     return passwordLength;
   }
 }
+
+var getLowerCase = function () {
+  if (confirm("Would you like to include lowercase characters?")) {
+    bank += lowercaseBank;
+  }
+}
+
+var getUpperCase = function () {
+  if (confirm("Would you like to include uppercase characters?")) {
+    bank += uppercaseBank;
+  }
+}
+
+var getNumbers = function () {
+  if (confirm("Would you like to include numbers?")) {
+    bank += numbersBank;
+  }
+}
+
+var getSpecialChar = function () {
+  if (confirm("Would you like to include special characters?")) {
+    bank += specialCharBank;
+  }
+}
