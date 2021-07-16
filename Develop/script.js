@@ -21,14 +21,12 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
-
 // prompt
 var generatePassword = function () {
-  alert("uhhhh");
   var password = "";
   passwordLength = getPasswordLength();
   
+  //Prompt the user for types of characters to include in password
   getLowerCase();
   getUpperCase();
   getNumbers();
@@ -44,45 +42,4 @@ var generatePassword = function () {
   }
   bank = '';
   return password;
-}
-
-var getPasswordLength = function () {
-  passwordLength = prompt("Enter a password length");
-  if (passwordLength < 8 || passwordLength > 128) {
-    getPasswordLength();
-  }
-  else {
-    return passwordLength;
-  }
-}
-
-var getLowerCase = function () {
-  if (confirm("Would you like to include lowercase characters?")) {
-    bank += lowercaseBank;
-  }
-}
-
-var getUpperCase = function () {
-  if (confirm("Would you like to include uppercase characters?")) {
-    bank += uppercaseBank;
-  }
-}
-
-var getNumbers = function () {
-  if (confirm("Would you like to include numbers?")) {
-    bank += numbersBank;
-  }
-}
-
-var getSpecialChar = function () {
-  if (confirm("Would you like to include special characters?")) {
-    bank += specialCharBank;
-  }
-}
-
-var checkCharsBank = function () {
-  if (bank === "") {
-    alert("Please choose at least one character type!")
-    generatePassword();
-  }
 }
