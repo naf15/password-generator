@@ -62,11 +62,12 @@ var getPasswordLength = function () {
   
   passwordLength = prompt("Enter a password length");
   
-  if (passwordLength < 8 || passwordLength > 128) {
-    getPasswordLength();
+  if (passwordLength >= 8 && passwordLength <= 128) {
+    return passwordLength;
   }
   else {
-    return passwordLength;
+    alert("Please enter a valid length between 8 and 128.");
+    getPasswordLength();
   }
 }
 
