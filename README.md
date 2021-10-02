@@ -1,4 +1,4 @@
-# 03 JavaScript: Password Generator
+# JavaScript: Password Generator
 
 ## Description
 
@@ -10,7 +10,7 @@ The password strength can be varied depending on the length of the password alon
 * numbers (0123456789)
 * special characters (~!@#$%^&*()_+)
 * 8 <= length <= 128
-
+Cancel changes
 ## Usage
 
 In order to generate random password, the user must follow these instructions:
